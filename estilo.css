@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faeddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 1120px;
+} 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: #f3c6b9;
+    width: 100%;
+    box-shadow: 0 5px 0 #f7a29e;
+    max-width: 1120px;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #3b3f49;
+}
+
+.home-info {
+    text-align: justify;
+
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.home-info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: justify;
+    gap: 15px;
+}
+
+.home-info button {
+    border: none;
+    width: 150px;
+    padding: 10px;
+    background-color: #f3c6b9;
+    color: #faeddf;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 8px;
+}
+
+.home-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    height: 460px;
+    width: 900px;
+    overflow: hidden;
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+
+} 
+
+.navegacao {
+    position: relative;
+    bottom: 20px;
+    left: 60%;
+    transform: translate(-50%);
+    display: flex;
+    margin-top: -200px;
+}
+
+.bar {
+    background-color: rgb(220, 232, 232, .5);
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+}
+
+.bar:hover {
+    background-color: rgb(220, 232, 232, .1);
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: .4s;
+}
+
+.imagem img {
+    width: 50%;
+    height: 50%;
+}
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 { 
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333334%;
+}
+
+#contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 320px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 20px;
+    gap: 10px;
+}
+
+input, textarea, button {
+    box-shadow: 0 1px 2px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contato form button {
+    background-color: #f3c6b9;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
